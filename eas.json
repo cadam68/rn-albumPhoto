@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 12.6.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    },
+    "adhoc": {
+      "ios": {
+        "distribution": "internal",
+        "enterpriseProvisioning": "adhoc"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

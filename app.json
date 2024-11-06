@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "photo-album",
+    "slug": "photo-album",
+    "description": "Take and share photo with your family",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-ios.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "icon": "./assets/icon-ios.png",
+      "bundleIdentifier": "com.ca-inline.photoAlbum",
+      "buildNumber": "3.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-android.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ca_inline.photoAlbum",
+      "versionCode": 300,
+      "permissions": [
+        "CAMERA",
+        "VIBRATE",
+        "AUDIO_RECORDING",
+        "MEDIA_LIBRARY",
+        "MEDIA_LIBRARY_WRITE_ONLY",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "${process.env.EAS_PROJECT_ID}"
+      }
+    }
+  }
+}
